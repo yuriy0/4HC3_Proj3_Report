@@ -1,0 +1,147 @@
+\documentclass{sigchi}
+
+% Use this command to override the default ACM copyright statement
+% (e.g. for preprints).  Consult the conference website for the
+% camera-ready copyright statement.
+
+%% EXAMPLE BEGIN -- HOW TO OVERRIDE THE DEFAULT COPYRIGHT STRIP -- (July 22, 2013 - Paul Baumann)
+\toappear{}
+%% EXAMPLE END -- HOW TO OVERRIDE THE DEFAULT COPYRIGHT STRIP -- (July 22, 2013 - Paul Baumann)
+
+% Arabic page numbers for submission.  Remove this line to eliminate
+% page numbers for the camera ready copy
+% \pagenumbering{arabic}
+
+% Load basic packages
+\usepackage{balance}  % to better equalize the last page
+\usepackage{graphics} % for EPS, load graphicx instead 
+\usepackage[T1]{fontenc}
+\usepackage{txfonts}
+\usepackage{mathptmx}
+\usepackage[pdftex]{hyperref}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage{textcomp}
+% Some optional stuff you might like/need.
+\usepackage{microtype} % Improved Tracking and Kerning
+% \usepackage[all]{hypcap}  % Fixes bug in hyperref caption linking
+\usepackage{ccicons}  % Cite your images correctly!
+% \usepackage[utf8]{inputenc} % for a UTF8 editor only
+\usepackage{wrapfig}
+\usepackage{color}
+
+% If you want to use todo notes, marginpars etc. during creation of your draft document, you
+% have to enable the "chi_draft" option for the document class. To do this, change the very first
+% line to: "\documentclass[chi_draft]{sigchi}". You can then place todo notes by using the "\todo{...}"
+% command. Make sure to disable the draft option again before submitting your final document.
+\usepackage{todonotes}
+
+% Paper metadata (use plain text, for PDF inclusion and later
+% re-using, if desired).  Use \emtpyauthor when submitting for review
+% so you remain anonymous.
+\def\plaintitle{Instant Communication Software\\Supplemental Documentation}
+\def\plainauthor{Yuriy Toporovskyy, {\color{red} TODO}} 
+\def\emptyauthor{}
+\def\plainkeywords{Instant communication; instant messaging; usability principals}
+\def\plaingeneralterms{UI design}
+
+% llt: Define a global style for URLs, rather that the default one
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{
+    \def\UrlFont{\sf}
+  }{
+    \def\UrlFont{\small\bf\ttfamily}
+  }}
+\makeatother
+\urlstyle{leo}
+
+% To make various LaTeX processors do the right thing with page size.
+\def\pprw{8.5in}
+\def\pprh{11in}
+\special{papersize=\pprw,\pprh}
+\setlength{\paperwidth}{\pprw}
+\setlength{\paperheight}{\pprh}
+\setlength{\pdfpagewidth}{\pprw}
+\setlength{\pdfpageheight}{\pprh}
+
+% Make sure hyperref comes last of your loaded packages, to give it a
+% fighting chance of not being over-written, since its job is to
+% redefine many LaTeX commands.
+\definecolor{linkColor}{RGB}{6,125,233}
+\hypersetup{%
+  pdftitle={\plaintitle},
+% Use \plainauthor for final version.
+%  pdfauthor={\plainauthor},
+  pdfauthor={\emptyauthor},
+  pdfkeywords={\plainkeywords},
+  bookmarksnumbered,
+  pdfstartview={FitH},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=linkColor,
+  breaklinks=true,
+}
+
+% create a shortcut to typeset table headings
+% \newcommand\tabhead[1]{\small\textbf{#1}}
+
+% End of preamble. Here it comes the document.
+
+%
+\def\sharedaffiliation{%
+\end{tabular}
+\begin{tabular}{c}}
+%
+\begin{document}
+
+\title{\plaintitle}
+
+\numberofauthors{4}
+% Three authors sharing the same affiliation.
+    \author{
+      \alignauthor Yuriy Toporovskyy\\      
+      \email{1204924} 
+      \email{toporoy@mcmaster.ca}
+%
+      \alignauthor Author1\\      
+      \email{123456789} 
+      \email{email@mcmaster.ca}
+%
+      \alignauthor Author2 \\      
+      \email{123456789} 
+      \email{email@mcmaster.ca}
+\and%
+      \alignauthor Author3\\      
+      \email{123456789} 
+      \email{email@mcmaster.ca}
+%
+      \sharedaffiliation\\\\
+      \affaddr{Department of Computing and Software}  \\
+      \affaddr{McMaster University, Hamilton}   \\
+      \affaddr{Hamilton, Ontario}
+          }
+%
+\maketitle
+
+\section{Personas}
+Personas aid in the design process by helping to identify the user and their goals.
+
+\section{HTAs}
+HTA (Hierarchal task analysis) provide us with a simple way to see and compare the 
+sequence of actions required to complete a task with some software.
+
+\subsection{Surveyed software}
+\subsection{Designed software}
+
+\section{Design images and design iterations}
+This section includes all design mockups and design iterations. 
+
+\subsection{Iteration 1}
+\subsection{Iteration 2}
+\subsection{Iteration 2.5}
+
+\end{document}
+
